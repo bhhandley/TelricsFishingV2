@@ -1,7 +1,7 @@
 <config>
 
     <!-- Increased reel in amount becase RSI is bad -->
-    <set xpath="/items/item[@name='fishingPoleWood']/effect_group[@name='Additional Stuffs']/triggered_effect[@trigger='onSelfItemActivate'][@action='ModifyCVar'][@cvar='FishingCatchTrigger'][@operation='add']/@value">randomint(8,16)</set>
+    <set xpath="/items/item[@name='fishingPoleWood']/effect_group[@name='Additional Stuffs']/triggered_effect[@trigger='onSelfItemActivate'][@action='ModifyCVar'][@cvar='FishingCatchTrigger'][@operation='add']/@value">randomint(6,12)</set>
 
     <!-- Add all food items to crafting progression -->
     <setattribute xpath="/items/item[@name='foodGrilledFishFillet']" name="UnlockedBy">craftingFood</setattribute>
