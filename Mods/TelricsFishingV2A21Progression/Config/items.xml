@@ -1,0 +1,22 @@
+<config>
+
+    <!-- Increased reel in amount becase RSI is bad -->
+    <set xpath="/items/item[@name='fishingPoleWood']/effect_group[@name='Additional Stuffs']/triggered_effect[@trigger='onSelfItemActivate'][@action='ModifyCVar'][@cvar='FishingCatchTrigger'][@operation='add']/@value">randomint(8,16)</set>
+
+    <!-- Add all food items to crafting progression -->
+    <setattribute xpath="/items/item[@name='foodGrilledFishFillet']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodMarinatedTunaSteak']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodFriedBluegil']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodFriedCatfish']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodGrilledCrabCake']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodGlazedMackerel']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodBlackenedRedSnapper']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodFriedShadRoeandBacon']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodGrilledOctopus']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodFriedShrimp']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodFriedTrout']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodSearedBass']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodRoastedGrouper']" name="UnlockedBy">craftingFood</setattribute>
+    <setattribute xpath="/items/item[@name='foodFriedCrappieCake']" name="UnlockedBy">craftingFood</setattribute>
+
+</config>

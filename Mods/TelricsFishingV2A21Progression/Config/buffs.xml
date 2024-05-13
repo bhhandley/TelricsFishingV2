@@ -1,0 +1,27 @@
+<config>
+    <!-- Release the fish faster -->
+    <set xpath="/buffs/buff[@name='buffFishingCatch']/effect_group[@name='Fish Tug CVars']/triggered_effect[@trigger='onSelfBuffUpdate'][@action='ModifyCVar'][@cvar='FishingCatchTrigger'][@operation='subtract']/@value">randomint(3,7)</set>
+
+    <!-- Allow the tier of fishing pole to add to catch chance -->
+    <append xpath="/buffs/buff[@name='buffFishingCast']/effect_group[@name='Set CVars']">
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchChance" operation="add" value="0">
+            <requirement name="RequirementItemTier" operation="Equals" value="1"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchChance" operation="add" value="2">
+            <requirement name="RequirementItemTier" operation="Equals" value="2"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchChance" operation="add" value="4">
+            <requirement name="RequirementItemTier" operation="Equals" value="3"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchChance" operation="add" value="6">
+            <requirement name="RequirementItemTier" operation="Equals" value="4"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchChance" operation="add" value="8">
+            <requirement name="RequirementItemTier" operation="Equals" value="5"/>
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="FishingCatchChance" operation="add" value="10">
+            <requirement name="RequirementItemTier" operation="Equals" value="6"/>
+        </triggered_effect>
+    </append>
+
+</config>

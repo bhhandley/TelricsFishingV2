@@ -1,0 +1,93 @@
+<config>
+
+    <!--  Adjust some recipie ingredients and crafting times -->
+
+    <!-- Tools -->
+    <remove xpath="/recipes/recipe[@name='fishingPoleWood']" />
+    <remove xpath="/recipes/recipe[@name='resourceIronHook']" />
+    <remove xpath="/recipes/recipe[@name='resourceFishingSpool']" />
+    <remove xpath="/recipes/recipe[@name='weaponBugnet']" />
+
+    <append xpath="/recipes">
+        <recipe name="fishingPoleWood" count="1" craft_time="300" tags="FishingMasterPerks">
+            <ingredient name="resourceIronHook" count="1"/>
+            <ingredient name="resourceFishingSpool" count="1"/>
+            <ingredient name="resourceWood" count="10"/>
+            <ingredient name="resourceNail" count="5"/>
+            <ingredient name="resourceScrapIron" count="15"/>
+            <ingredient name="resourceDuctTape" count="1"/>
+        </recipe>
+
+        <recipe name="resourceIronHook" count="1" craft_time="190">
+            <ingredient name="resourceFishingWeight" count="3"/>
+            <ingredient name="resourceScrapIron" count="15"/>
+        </recipe>
+
+        <recipe name="resourceFishingSpool" count="1" craft_time="300">
+            <ingredient name="resourceSewingKit" count="3"/>
+            <ingredient name="resourceScrapIron" count="5"/>
+            <ingredient name="resourceWood" count="2"/>
+            <ingredient name="resourceScrapPolymers" count="4"/>
+        </recipe>
+
+        <recipe name="weaponBugnet" count="1" craft_time="300" tags="FishingMasterPerks">
+            <ingredient name="resourceMetalPipe" count="3"/>
+            <ingredient name="resourceSewingKit" count="2"/>
+            <ingredient name="resourceCloth" count="10"/>
+            <ingredient name="resourceWood" count="4"/>
+            <ingredient name="resourceDuctTape" count="1"/>
+        </recipe>
+    </append>
+
+
+    <!-- Food -->
+    <!-- T1-2 -->
+    <setattribute xpath="/recipes/recipe[@name='foodGrilledFishFillet']" name="craft_time">65</setattribute>
+
+    <!-- T1-3 -->
+    <setattribute xpath="/recipes/recipe[@name='foodGrilledCrabCake']" name="craft_time">85</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodGrilledCrabCake']" name="tags">learnable</setattribute>
+
+    <setattribute xpath="/recipes/recipe[@name='foodFriedCrappieCake']" name="craft_time">85</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodFriedCrappieCake']" name="tags">learnable</setattribute>
+
+
+    <!-- T2-1 -->
+    <setattribute xpath="/recipes/recipe[@name='foodFriedShrimp']" name="craft_time">165</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodFriedShrimp']" name="tags">learnable</setattribute>
+
+    <setattribute xpath="/recipes/recipe[@name='foodFriedBluegil']" name="craft_time">185</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodFriedBluegil']" name="tags">learnable</setattribute>
+
+    <setattribute xpath="/recipes/recipe[@name='foodSearedBass']" name="craft_time">185</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodSearedBass']" name="tags">learnable</setattribute>
+
+    <setattribute xpath="/recipes/recipe[@name='foodBlackenedRedSnapper']" name="craft_time">185</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodBlackenedRedSnapper']" name="tags">learnable</setattribute>
+
+
+    <!-- T2-3 -->
+    <setattribute xpath="/recipes/recipe[@name='foodGlazedMackerel']" name="craft_time">220</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodGlazedMackerel']" name="tags">learnable</setattribute>
+
+    <setattribute xpath="/recipes/recipe[@name='foodGrilledOctopus']" name="craft_time">220</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodGrilledOctopus']" name="tags">learnable</setattribute>
+
+
+    <!-- T3-3 Attribute Buff Foods -->
+    <setattribute xpath="/recipes/recipe[@name='foodRoastedGrouper']" name="craft_time">315</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodRoastedGrouper']" name="tags">learnable</setattribute>
+
+    <setattribute xpath="/recipes/recipe[@name='foodFriedCatfish']" name="craft_time">315</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodFriedCatfish']" name="tags">learnable</setattribute>
+
+    <setattribute xpath="/recipes/recipe[@name='foodMarinatedTunaSteak']" name="craft_time">315</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodMarinatedTunaSteak']" name="tags">learnable</setattribute>
+
+    <setattribute xpath="/recipes/recipe[@name='foodFriedShadRoeandBacon']" name="craft_time">315</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodFriedShadRoeandBacon']" name="tags">learnable</setattribute>
+
+    <setattribute xpath="/recipes/recipe[@name='foodFriedTrout']" name="craft_time">315</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodFriedTrout']" name="tags">learnable</setattribute>
+
+</config>

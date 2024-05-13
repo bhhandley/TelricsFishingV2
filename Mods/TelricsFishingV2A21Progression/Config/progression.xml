@@ -1,0 +1,35 @@
+<configs>
+
+    <!-- T1 Tools -->
+    <csv xpath="//crafting_skill[@name='craftingHarvestingTools']/display_entry/unlock_entry[starts-with(@item,'meleeToolPickT1IronPickaxe')]/@item" op="Add">resourceIronHook,resourceFishingSpool,fishingPoleWood</csv>
+    <csv xpath="//crafting_skill[@name='craftingHarvestingTools']/effect_group/passive_effect[starts-with(@tags,'meleeToolPickT1IronPickaxe')]/@tags" op="Add">resourceIronHook,resourceFishingSpool,fishingPoleWood</csv>
+
+
+    <!-- T1 Food -->
+    <!-- Display -->
+    <csv xpath="//crafting_skill[@name='craftingFood']/display_entry/unlock_entry[starts-with(@item,'foodGrilledMeat')]/@item" op="Add">foodGrilledFishFillet</csv>
+    <csv xpath="//crafting_skill[@name='craftingFood']/display_entry/unlock_entry[starts-with(@item,'foodBoiledMeat')]/@item" op="Add">foodGrilledCrabCake,foodFriedCrappieCake</csv>
+
+    <!-- Unlock -->
+    <csv xpath="//crafting_skill[@name='craftingFood']/effect_group/passive_effect[starts-with(@tags,'foodGrilledMeat')]/@tags" op="Add">foodGrilledFishFillet</csv>
+    <csv xpath="//crafting_skill[@name='craftingFood']/effect_group/passive_effect[starts-with(@tags,'foodBoiledMeat')]/@tags" op="Add">foodGrilledCrabCake,foodFriedCrappieCake</csv>
+
+
+    <!-- T2 Food -->
+    <!-- Display -->
+    <csv xpath="//crafting_skill[@name='craftingFood']/display_entry/unlock_entry[starts-with(@item,'foodPumpkinBread')]/@item" op="Add">foodFriedShrimp,foodFriedBluegil,foodSearedBass,foodBlackenedRedSnapper</csv>
+    <csv xpath="//crafting_skill[@name='craftingFood']/display_entry/unlock_entry[starts-with(@item,'foodPumpkinPie')]/@item" op="Add">foodGlazedMackerel,foodGrilledOctopus</csv>
+
+    <!-- Unlock -->
+    <csv xpath="//crafting_skill[@name='craftingFood']/effect_group/passive_effect[starts-with(@tags,'foodPumpkinBread')]/@tags" op="Add">foodFriedShrimp,foodFriedBluegil,foodSearedBass,foodBlackenedRedSnapper</csv>
+    <csv xpath="//crafting_skill[@name='craftingFood']/effect_group/passive_effect[starts-with(@tags,'foodPumpkinPie')]/@tags" op="Add">foodGlazedMackerel,foodGrilledOctopus</csv>
+
+
+    <!-- T3 Food -->
+    <!-- Display -->
+    <csv xpath="//crafting_skill[@name='craftingFood']/display_entry/unlock_entry[starts-with(@item,'foodFishTacos')]/@item" op="Add">foodFriedCatfish,foodMarinatedTunaSteak,foodFriedShadRoeandBacon,foodFriedTrout,foodRoastedGrouper</csv>
+
+    <!-- Unlock -->
+    <csv xpath="//crafting_skill[@name='craftingFood']/effect_group/passive_effect[starts-with(@tags,'foodFishTacos')]/@tags" op="Add">foodFriedCatfish,foodMarinatedTunaSteak,foodFriedShadRoeandBacon,foodFriedTrout,foodRoastedGrouper</csv>
+
+</configs>
