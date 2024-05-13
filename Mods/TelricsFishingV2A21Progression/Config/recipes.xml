@@ -42,7 +42,7 @@
 
     <!-- Food -->
     <!-- T1-2 -->
-    <setattribute xpath="/recipes/recipe[@name='foodGrilledFishFillet']" name="tags">perkMasterChef</setattribute>
+    <setattribute xpath="/recipes/recipe[@name='foodGrilledFishFillet']" name="tags">perkMasterChef,learnable</setattribute>
 
     <!-- T1-3 -->
     <setattribute xpath="/recipes/recipe[@name='foodGrilledCrabCake']" name="tags">perkMasterChef,learnable</setattribute>
