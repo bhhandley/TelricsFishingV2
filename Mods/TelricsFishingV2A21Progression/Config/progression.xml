@@ -1,10 +1,5 @@
 <configs>
 
-    <!-- T1 Tools -->
-    <csv xpath="//crafting_skill[@name='craftingHarvestingTools']/display_entry/unlock_entry[starts-with(@item,'meleeToolPickT1IronPickaxe')]/@item" op="Add">resourceIronHook,resourceFishingSpool,fishingPoleWood</csv>
-    <csv xpath="//crafting_skill[@name='craftingHarvestingTools']/effect_group/passive_effect[starts-with(@tags,'meleeToolPickT1IronPickaxe')]/@tags" op="Add">resourceIronHook,resourceFishingSpool,fishingPoleWood</csv>
-
-
     <!-- T1 Food -->
     <!-- Display -->
     <csv xpath="//crafting_skill[@name='craftingFood']/display_entry/unlock_entry[starts-with(@item,'foodGrilledMeat')]/@item" op="Add">foodGrilledFishFillet</csv>
