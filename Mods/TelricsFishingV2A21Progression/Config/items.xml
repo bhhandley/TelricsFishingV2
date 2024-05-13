@@ -3,6 +3,19 @@
     <!-- Increased reel in amount becase RSI is bad -->
     <set xpath="/items/item[@name='fishingPoleWood']/effect_group[@name='Additional Stuffs']/triggered_effect[@trigger='onSelfItemActivate'][@action='ModifyCVar'][@cvar='FishingCatchTrigger'][@operation='add']/@value">randomint(6,12)</set>
 
+    <!-- Add crafting time to fish ingredients -->
+    <setattribute xpath="/items/item[@name='resourceRawBluegilFishFillet']" name="CraftingIngredientTime">55</setattribute>
+    <setattribute xpath="/items/item[@name='resourceRawCatfishFillet']" name="CraftingIngredientTime">55</setattribute>
+    <setattribute xpath="/items/item[@name='resourceRawCrappieFillet']" name="CraftingIngredientTime">55</setattribute>
+    <setattribute xpath="/items/item[@name='resourceRawGrouperFillet']" name="CraftingIngredientTime">55</setattribute>
+    <setattribute xpath="/items/item[@name='resourceRawLargeMouthBassFillet']" name="CraftingIngredientTime">55</setattribute>
+    <setattribute xpath="/items/item[@name='resourceRawMackerelFillet']" name="CraftingIngredientTime">55</setattribute>
+    <setattribute xpath="/items/item[@name='resourceRawRedSnapperFillet']" name="CraftingIngredientTime">55</setattribute>
+    <setattribute xpath="/items/item[@name='resourceRawStripedBassFillet']" name="CraftingIngredientTime">55</setattribute>
+    <setattribute xpath="/items/item[@name='resourceRawTroutFillet']" name="CraftingIngredientTime">55</setattribute>
+    <setattribute xpath="/items/item[@name='resourceRawTunaFillet']" name="CraftingIngredientTime">55</setattribute>
+    <setattribute xpath="/items/item[@name='resourceRawShadRoe']" name="CraftingIngredientTime">55</setattribute>
+
     <!-- Add all food items to crafting progression -->
     <setattribute xpath="/items/item[@name='foodGrilledFishFillet']" name="UnlockedBy">craftingFood</setattribute>
     <setattribute xpath="/items/item[@name='foodMarinatedTunaSteak']" name="UnlockedBy">craftingFood</setattribute>
