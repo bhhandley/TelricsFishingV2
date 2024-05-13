@@ -75,52 +75,52 @@
 
 <recipe name="foodGrilledFishFillet" count="1" craft_time="15" craft_area="campfire" craft_tool="toolCookingGrill">
 	<ingredient name="resourceRawBluegilFishFillet" count="1"/>
-	
+
 	<ingredient name="resourceAnimalFat" count="2"/>
 </recipe>
 <recipe name="foodGrilledFishFillet" count="1" craft_time="15" craft_area="campfire" craft_tool="toolCookingGrill">
 	<ingredient name="resourceRawCatfishFillet" count="1"/>
-	
+
 	<ingredient name="resourceAnimalFat" count="2"/>
 </recipe>
 <recipe name="foodGrilledFishFillet" count="1" craft_time="15" craft_area="campfire" craft_tool="toolCookingGrill">
 	<ingredient name="resourceRawCrappieFillet" count="1"/>
-	
+
 	<ingredient name="resourceAnimalFat" count="2"/>
 </recipe>
 <recipe name="foodGrilledFishFillet" count="1" craft_time="15" craft_area="campfire" craft_tool="toolCookingGrill">
 	<ingredient name="resourceRawGrouperFillet" count="1"/>
-	
+
 	<ingredient name="resourceAnimalFat" count="2"/>
 </recipe>
 <recipe name="foodGrilledFishFillet" count="1" craft_time="15" craft_area="campfire" craft_tool="toolCookingGrill">
 	<ingredient name="resourceRawLargeMouthBassFillet" count="1"/>
-	
+
 	<ingredient name="resourceAnimalFat" count="2"/>
 </recipe>
 <recipe name="foodGrilledFishFillet" count="1" craft_time="15" craft_area="campfire" craft_tool="toolCookingGrill">
 	<ingredient name="resourceRawMackerelFillet" count="1"/>
-	
+
 	<ingredient name="resourceAnimalFat" count="2"/>
 </recipe>
 <recipe name="foodGrilledFishFillet" count="1" craft_time="15" craft_area="campfire" craft_tool="toolCookingGrill">
 	<ingredient name="resourceRawRedSnapperFillet" count="1"/>
-	
+
 	<ingredient name="resourceAnimalFat" count="2"/>
 </recipe>
 <recipe name="foodGrilledFishFillet" count="1" craft_time="15" craft_area="campfire" craft_tool="toolCookingGrill">
 	<ingredient name="resourceRawStripedBassFillet" count="1"/>
-	
+
 	<ingredient name="resourceAnimalFat" count="2"/>
 </recipe>
 <recipe name="foodGrilledFishFillet" count="1" craft_time="15" craft_area="campfire" craft_tool="toolCookingGrill">
 	<ingredient name="resourceRawTroutFillet" count="1"/>
-	
+
 	<ingredient name="resourceAnimalFat" count="2"/>
 </recipe>
 <recipe name="foodGrilledFishFillet" count="1" craft_time="15" craft_area="campfire" craft_tool="toolCookingGrill">
 	<ingredient name="resourceRawTunaFillet" count="1"/>
-	
+
 	<ingredient name="resourceAnimalFat" count="2"/>
 </recipe>
 
@@ -171,7 +171,7 @@
 	<ingredient name="resourceOctopus" count="1"/>
 	<ingredient name="resourceAnimalFat" count="3"/>
 	<ingredient name="resourceCropGoldenrodPlant" count="3"/>
-	
+
 </recipe>
 <recipe name="foodFriedShrimp" count="1" craft_time="15" craft_area="campfire" craft_tool="toolCookingPot">
 	<ingredient name="resourceShrimp" count="1"/>
@@ -211,9 +211,16 @@
 	<ingredient name="resourceCropGoldenrodPlant" count="2"/>
 </recipe>
 
-<recipe name="foodCanTuna" count="1" craft_time="15">
+<!-- Added in place of previous tuna can recipe -->
+<recipe name="foodTunaFishGravyToast" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 	<ingredient name="resourceRawTunaFillet" count="1"/>
-	<ingredient name="drinkCanEmpty" count="1"/>	
+	<ingredient name="foodCornMeal" count="1"/>
+	<ingredient name="foodCornBread" count="2"/>
+	<ingredient name="resourceAnimalFat" count="3"/>
+	<ingredient name="foodCanPeas" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="resourceAnimalFat"/>
+	</effect_group>
 </recipe>
 </append>
 
